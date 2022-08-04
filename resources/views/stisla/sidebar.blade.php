@@ -29,6 +29,9 @@
                     <li>
                         <a class="nav-link" href="{{ url('admin/profile-team') }}"> <span>Our Team</span></a>
                     </li>
+                    <li>
+                        <a class="nav-link" href="{{ url('admin/profile-testi') }}"> <span>Testimonial</span></a>
+                    </li>
                 </ul>
           </li>
         @endif

@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             HomeFeatureSeeder::class,
             ProfileContentSeeder::class,
             ProfileTeamSeeder::class,
+            ProfileTestiSeeder::class,
         ]);
         // \App\Models\User::factory(10)->create();
 

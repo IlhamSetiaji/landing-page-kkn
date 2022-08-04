@@ -45,6 +45,8 @@ Route::middleware('auth')->group(function(){
         Route::post('/profile-content/{contentID}/update',[ProfileController::class,'updateContent']);
         Route::get('/profile-team',[ProfileController::class,'indexTeam']);
         Route::post('/profile-team/{teamID}/update',[ProfileController::class,'updateTeam']);
+        Route::get('/profile-testi',[ProfileController::class,'indexTesti']);
+        Route::post('/profile-testi/{testiID}/update',[ProfileController::class,'updateTesti']);
         Route::get('/artikel',[ArtikelController::class,'indexArticle']);
         Route::post('/artikel',[ArtikelController::class,'storeArticle']);
     });
