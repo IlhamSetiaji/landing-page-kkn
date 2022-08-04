@@ -6,6 +6,7 @@ use App\Models\HomeHero;
 use Illuminate\Http\Request;
 use App\Models\ProfileContent;
 use App\Models\ProfileTeam;
+use App\Models\ProfileTesti;
 use Illuminate\Support\Facades\Validator;
 
 class ProfileController extends Controller
@@ -15,7 +16,8 @@ class ProfileController extends Controller
         $hero = HomeHero::latest()->first();
         $content = ProfileContent::latest()->first();
         $teams = ProfileTeam::latest()->take(3)->get();
-        return view('profil',compact('content','hero','teams'));
+        $testi = ProfileTesti::latest()->take(5)->get();
+        return view('profil',compact('content','hero','teams','testi'));
     }
 
     public function indexContent()
@@ -142,6 +144,62 @@ class ProfileController extends Controller
             'facebook' => request('facebook'),
             'instagram' => request('instagram'),
             'linkedin' => request('linkedin'),
+        ]);
+        return redirect()->back()->with('status','Data berhasil diupdate');
+    }
+
+    public function indexTesti()
+    {
+        $testi = ProfileTesti::all();
+        return view('admin.profil.profil-testi',compact('testi'));
+    }
+
+    public function updateTesti($testiID)
+    {
+        $user = request()->user();
+        if(!$user->hasRole('admin'))
+        {
+            return redirect()->back()->with('status','Anda bukan admin');
+        }
+        $testi = ProfileTesti::find($testiID);
+        if(!$testi)
+        {
+            return redirect()->back()->with('status','Data tidak ditemukan');
+        }
+        $validator = Validator::make(request()->all(),[
+            'name' => 'required|string|max:255',
+            'job' => 'required|string|max:255',
+            'desc' => 'required|string',
+            'star' => 'required|numeric|min:1|max:5',
+            'image' => 'nullable|max:10240|mimes:png,jpg,jpeg,svg,webp,heic',
+        ]);
+        if($validator->fails())
+        {
+            return redirect()->back()->withInput()->withErrors($validator);
+        }
+        if(request()->hasFile('image'))
+        {
+            $image = request()->file('image');
+            // return $image;
+            $name_gen = hexdec(uniqid()) . '.' . $image->getClientOriginalExtension();
+            // Image::make($gambar)->resize(500, 300)->save('images/wilayah/' . $name_gen);
+
+            $image->move(public_path('uploads/profile'), $name_gen);
+            $last_img = 'uploads/profile/' . $name_gen;
+            $testi->update([
+                'name' => request('name'),
+                'job' => request('job'),
+                'desc' => request('desc'),
+                'star' => request('star'),
+                'image' => $last_img,
+            ]);
+            return redirect()->back()->with('status','Data berhasil diupdate');
+        }
+        $testi->update([
+            'name' => request('name'),
+            'job' => request('job'),
+            'desc' => request('desc'),
+            'star' => request('star'),
         ]);
         return redirect()->back()->with('status','Data berhasil diupdate');
     }
