@@ -27,16 +27,14 @@
         <div class="container" data-aos="fade-up">
             <div class="row gy-4">
                 <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
-                    <img src="{{ asset('assets/img/tugu.png') }}" class="img-fluid" alt="">
-                    <a href="https://www.youtube.com/watch?v=qqvP3yZJVi8&ab_channel=MeycoDanuPradana"
+                    <img src="{{ $content->image }}" class="img-fluid" alt="">
+                    <a href="{{ $content->video }}"
                         class="glightbox play-btn"></a>
                 </div>
                 <div class="col-lg-6 content order-last  order-lg-first">
-                    <h3>PROFIL</h3>
+                    <h3>{{ $content->title }}</h3>
                     <p>
-                        Darungan adalah desa yang berada di kecamatan Yosowilangun, Kabupaten Lumajang, Jawa Timur,
-                        Indonesia.
-                        Pada tahun 2010, desa ini berpenduduk 3.993 jiwa.
+                        {{ $content->desc }}
                     </p>
                 </div>
             </div>
@@ -48,21 +46,21 @@
             <div class="row gy-4">
                 <div class="col-lg-3 col-md-6">
                     <div class="stats-item text-center w-100 h-100">
-                        <span data-purecounter-start="0" data-purecounter-end="1781" data-purecounter-duration="1"
+                        <span data-purecounter-start="0" data-purecounter-end="{{ $hero->krajan }}" data-purecounter-duration="1"
                             class="purecounter"></span>
                         <p>Dusun Krajan</p>
                     </div>
                 </div><!-- End Stats Item -->
                 <div class="col-lg-3 col-md-6">
                     <div class="stats-item text-center w-100 h-100">
-                        <span data-purecounter-start="0" data-purecounter-end="1973" data-purecounter-duration="1"
+                        <span data-purecounter-start="0" data-purecounter-end="{{ $hero->rekesan }}" data-purecounter-duration="1"
                             class="purecounter"></span>
                         <p>Dusun Rekesan</p>
                     </div>
                 </div><!-- End Stats Item -->
                 <div class="col-lg-3 col-md-6">
                     <div class="stats-item text-center w-100 h-100">
-                        <span data-purecounter-start="0" data-purecounter-end="572" data-purecounter-duration="1"
+                        <span data-purecounter-start="0" data-purecounter-end="{{ $hero->igir }}" data-purecounter-duration="1"
                             class="purecounter"></span>
                         <p>Dusun Igir-igir</p>
                     </div>

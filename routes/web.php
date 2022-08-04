@@ -41,6 +41,8 @@ Route::middleware('auth')->group(function(){
         // Route::get('/home-hero/{heroID}/delete',[HomeController::class,'deleteHero']);
         Route::get('/home-feature',[HomeController::class,'indexFeature']);
         Route::post('/home-feature/{heroID}/update',[HomeController::class,'updateFeature']);
+        Route::get('/profile-content',[ProfileController::class,'indexContent']);
+        Route::post('/profile-content/{contentID}/update',[ProfileController::class,'updateContent']);
         Route::get('/artikel',[ArtikelController::class,'indexArticle']);
         Route::post('/artikel',[ArtikelController::class,'storeArticle']);
     });
