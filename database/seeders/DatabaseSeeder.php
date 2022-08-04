@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             HomeHeroSeeder::class,
             HomeFeatureSeeder::class,
             ProfileContentSeeder::class,
+            ProfileTeamSeeder::class,
         ]);
         // \App\Models\User::factory(10)->create();
 

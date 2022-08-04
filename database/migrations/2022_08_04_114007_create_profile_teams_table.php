@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('facebook');
             $table->string('instagram');
             $table->string('linkedin');
+            $table->string('image');
             $table->timestamps();
         });
     }
