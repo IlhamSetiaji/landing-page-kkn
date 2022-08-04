@@ -43,6 +43,8 @@ Route::middleware('auth')->group(function(){
         Route::post('/home-feature/{heroID}/update',[HomeController::class,'updateFeature']);
         Route::get('/profile-content',[ProfileController::class,'indexContent']);
         Route::post('/profile-content/{contentID}/update',[ProfileController::class,'updateContent']);
+        Route::get('/profile-team',[ProfileController::class,'indexTeam']);
+        Route::post('/profile-team/{teamID}/update',[ProfileController::class,'updateTeam']);
         Route::get('/artikel',[ArtikelController::class,'indexArticle']);
         Route::post('/artikel',[ArtikelController::class,'storeArticle']);
     });

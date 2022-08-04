@@ -121,6 +121,7 @@
             </footer>
         </div>
     </div>
+    @include('admin.modal.update-profile-team')
     @include('stisla.script')
 </body>
 
