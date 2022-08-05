@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('subject');
             $table->string('message');
             $table->timestamp('datetime');
+            $table->enum('status',['DONE','NOT YET'])->default('NOT YET');
             $table->timestamps();
         });
     }
