@@ -47,6 +47,10 @@ Route::middleware('auth')->group(function(){
         Route::post('/profile-team/{teamID}/update',[ProfileController::class,'updateTeam']);
         Route::get('/profile-testi',[ProfileController::class,'indexTesti']);
         Route::post('/profile-testi/{testiID}/update',[ProfileController::class,'updateTesti']);
+        Route::get('/potensi-content',[PotensiController::class,'indexContent']);
+        Route::post('/potensi-content',[PotensiController::class,'storeContent']);
+        Route::post('/potensi-content/{contentID}/update',[PotensiController::class,'updateContent']);
+        Route::get('/potensi-content/{contentID}/delete',[PotensiController::class,'deleteContent']);
         Route::get('/artikel',[ArtikelController::class,'indexArticle']);
         Route::post('/artikel',[ArtikelController::class,'storeArticle']);
     });
