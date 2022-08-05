@@ -53,5 +53,7 @@ Route::middleware('auth')->group(function(){
         Route::get('/potensi-content/{contentID}/delete',[PotensiController::class,'deleteContent']);
         Route::get('/artikel',[ArtikelController::class,'indexArticle']);
         Route::post('/artikel',[ArtikelController::class,'storeArticle']);
+        Route::post('/artikel/{artikelID}/update',[ArtikelController::class,'updateArticle']);
+        Route::get('/artikel/{artikelID}/delete',[ArtikelController::class,'deleteArticle']);
     });
 });
