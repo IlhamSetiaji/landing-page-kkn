@@ -26,7 +26,8 @@ Route::get('/profil',[ProfileController::class,'index']);
 Route::get('/struktur',[StrukturController::class,'index']);
 Route::get('/potensi',[PotensiController::class,'index']);
 Route::get('/artikel',[ArtikelController::class,'index']);
-Route::get('/kontak',[KontakController::class,'index']);
+Route::get('/kontak ',[KontakController::class,'index']);
+Route::post('/send-message',[KontakController::class,'sendMessage']);
 
 Route::get('login',[AuthController::class,'index'])->name('login');
 Route::post('login',[AuthController::class,'login']);
