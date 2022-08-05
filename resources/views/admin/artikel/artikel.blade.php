@@ -55,29 +55,44 @@
                                             </th>
                                             <th>Judul</th>
                                             <th>Deskripsi</th>
+                                            <th>Tanggal</th>
                                             <th>Gambar</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    
+                                        @foreach ($artikel as $key => $a)
                                         <tr>
                                             <td class="text-center">
-                                                1
+                                                {{ $key+1 }}
                                             </td>
                                             <td>
-                                                2
+                                                {{ $a->title }}
                                             </td>
                                             <td>
-                                                3
+                                                {{ $a->description }}
                                             </td>
                                             <td>
-                                                1
+                                                {{ $a->date }}
                                             </td>
                                             <td>
-                                                1
+                                                <img src="{{ asset($a->image) }}" alt=""
+                                                    style="height: 315px; width:420px;">
+                                            </td>
+                                            <td>
+                                                <div class="btn-group" role="group" aria-label="Basic example">
+                                                    <a href="#" data-toggle="modal"
+                                                        data-target="#updateData{{ $a->id }}">
+                                                        <button type="button" class="btn btn-warning">Edit</button>
+                                                    </a>
+                                                    <a href="#" data-toggle="modal"
+                                                        data-target="#deleteData{{ $a->id }}">
+                                                    <button type="button" class="btn btn-danger">Delete</button>
+                                                    </a>
+                                                </div>
                                             </td>
                                         </tr>
+                                        @endforeach
                                     </tbody>
                                     
                                 </table>
@@ -92,6 +107,8 @@
         </div>
     </div>
     @include('admin.modal.create-artikel')
+    @include('admin.modal.update-artikel')
+    @include('admin.modal.delete-artikel')
     @include('stisla.script')
 </body>
 

@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             ProfileTeamSeeder::class,
             ProfileTestiSeeder::class,
             PotensiContentSeeder::class,
+            ArtikelSeeder::class,
         ]);
         // \App\Models\User::factory(10)->create();
 
