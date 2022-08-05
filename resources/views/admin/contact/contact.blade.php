@@ -62,7 +62,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($contacts as $key => $c)
+                                        @foreach ($messages as $key => $a)
                                         <tr>
                                             <td class="text-center">
                                                 {{ $key+1 }}
@@ -77,7 +77,7 @@
                                                 {{ $a->subject }}
                                             </td>
                                             <td>
-                                                {{ $a->date }}
+                                                {{ $a->datetime }}
                                             </td>
                                             <td>
                                                 {{ $a->message }}
@@ -109,6 +109,7 @@
             </footer>
         </div>
     </div>
+    @include('admin.contact.send-message')
     @include('stisla.script')
 </body>
 

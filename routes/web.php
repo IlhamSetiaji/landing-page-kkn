@@ -56,5 +56,7 @@ Route::middleware('auth')->group(function(){
         Route::post('/artikel',[ArtikelController::class,'storeArticle']);
         Route::post('/artikel/{artikelID}/update',[ArtikelController::class,'updateArticle']);
         Route::get('/artikel/{artikelID}/delete',[ArtikelController::class,'deleteArticle']);
+        Route::get('/contact',[KontakController::class,'indexContact']);
+        Route::post('/contact/{messageID}/send-reply',[KontakController::class,'sendReply']);
     });
 });
