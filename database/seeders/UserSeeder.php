@@ -24,7 +24,7 @@ class UserSeeder extends Seeder
             ],
             [
                 'name' => 'Ilham Setiaji',
-                'email' => 'ilham.ahmadz18@gmail.com',
+                'email' => 'ilham.setiaji69@gmail.com',
                 'password' => Hash::make('password'),
             ],
         ])->each(function($users){

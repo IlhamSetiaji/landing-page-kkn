@@ -51,6 +51,14 @@
                     </li>
                 </ul>
             </li>
+            <li class="dropdown">
+                <a href="#" class="nav-link has-dropdown"><i class="fas fa-mail-bulk"></i> <span>Contact</span></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="nav-link" href="{{ url('admin/contact') }}"> <span>Inbox</span></a>
+                    </li>
+                </ul>
+            </li>
             @endif
         </ul>
     </aside>

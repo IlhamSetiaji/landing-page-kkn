@@ -1,5 +1,5 @@
 @extends('components.template')
-@section('title','Desa Darungan Struktur')
+@section('title','Desa Darungan Kontak')
 @section('main-content')
 <!-- ======= Breadcrumbs ======= -->
 <div class="breadcrumbs">
@@ -58,7 +58,8 @@
                 </div><!-- End Info Item -->
             </div>
             <div class="col-lg-8">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <form action="{{ url('send-message') }}" method="post" role="form" class="form">
+                    @csrf
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
