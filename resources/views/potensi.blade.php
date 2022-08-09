@@ -37,7 +37,7 @@
                     <div class="card-img">
                         <img src="{{ asset($c->image) }}" alt="" class="img-fluid h-100">
                     </div>
-                    <h3><a href="service-details.html" class="stretched-link">{{ $c->title }}</a></h3>
+                    <h3><a href="#" class="stretched-link">{{ $c->title }}</a></h3>
                     <p>{{ $c->desc }}</p>
                 </div>
             </div><!-- End Card Item -->

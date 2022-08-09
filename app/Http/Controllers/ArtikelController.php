@@ -122,4 +122,14 @@ class ArtikelController extends Controller
         $artikel->delete();
         return redirect()->back()->with('status','Data berhasil dihapus');
     }
+
+    public function detailArtikel($artikelID)
+    {
+        $artikel = Article::find($artikelID);
+        if(!$artikel)
+        {
+            return redirect()->back()->with('status','Data tidak ditemukan');
+        }
+        return view('artikel-detail',compact('artikel'));
+    }
 }
