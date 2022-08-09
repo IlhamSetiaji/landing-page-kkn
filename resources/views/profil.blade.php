@@ -102,8 +102,8 @@
     <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-            <span>Our Team</span>
-            <h2>Our Team</h2>
+            <span>KKN 473 Darungan</span>
+            <h2>KKN 473 Darungan</h2>
 
         </div>
 
@@ -111,17 +111,16 @@
             <div class="col"></div>
             <div class="col d-flex">
                 <div class="member mx-auto ">
-                    <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                    <img src="assets/img/teams/rella.HEIC.png" class="img-fluid" alt="">
                     <div class="member-content">
-                        <h4>Walter White</h4>
-                        <span>Web Development</span>
+                        <h4>Rella Desinta Kustri</h4>
+                        <span>Koordinator Desa</span>
                         <p>
-                            Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat
-                            qui aut aut aut
+                            "Don’t gain the world and lose your soul, wisdom is better than silver or gold."
                         </p>
-                        <div class="social">
+                        {{-- <div class="social">
                             <a href=""><i class="bi bi-instagram"></i></a>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -129,7 +128,7 @@
         </div>
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" data-aos="fade-up" data-aos-delay="100">
-            @foreach ($teams as $t)
+            {{-- @foreach ($teams as $t)
             <div class="col d-flex">
                 <div class="member">
                     <img src="{{ asset($t->image) }}" class="img-fluid" alt="">
@@ -145,10 +144,55 @@
                     </div>
                 </div>
             </div><!-- End Team Member -->
-            @endforeach
+            @endforeach --}}
+            <div class="col d-flex">
+                <div class="member">
+                    <img src="assets/img/teams/siti_second.HEIC.png" class="img-fluid" alt="">
+                    <div class="member-content">
+                        <h4>Siti Murdiyati Mukarromah</h4>
+                        <span>Sekretaris</span>
+                        <p>
+                            Everything has beauty, but not everyone sees it.
+                        </p>
+                        {{-- <div class="social">
+                            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </div> --}}
+                    </div>
+                </div>
+            </div><!-- End Team Member -->
+            <div class="col d-flex">
+                <div class="member">
+                    <img src="assets/img/teams/hamid.HEIC.png" class="img-fluid" alt="">
+                    <div class="member-content">
+                        <h4>Hamid Baidhowi Warda</h4>
+                        <span>Wakil Koordinator Desa</span>
+                        <p>
+                            Life is what happens when you’re busy making other plans.
+                        </p>
+                        {{-- <div class="social">
+                            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </div> --}}
+                    </div>
+                </div>
+            </div><!-- End Team Member -->
+            <div class="col d-flex">
+                <div class="member">
+                    <img src="assets/img/teams/muffidah.HEIC.png" class="img-fluid" alt="">
+                    <div class="member-content">
+                        <h4>Siti Lailatul Mufidah</h4>
+                        <span>Bendahara</span>
+                        <p>
+                            Life is short, and truth works far and lives long: let us then speak the truth.
+                        </p>
+                        {{-- <div class="social">
+                            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </div> --}}
+                    </div>
+                </div>
+            </div><!-- End Team Member -->
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" data-aos="fade-up" data-aos-delay="100">
-            @foreach ($teams as $t)
+            {{-- @foreach ($teams as $t)
             <div class="col d-flex">
                 <div class="member">
                     <img src="{{ asset($t->image) }}" class="img-fluid" alt="">
@@ -164,10 +208,55 @@
                     </div>
                 </div>
             </div><!-- End Team Member -->
-            @endforeach
+            @endforeach --}}
+            <div class="col d-flex">
+                <div class="member">
+                    <img src="assets/img/teams/sapeg.HEIC.png" class="img-fluid" alt="">
+                    <div class="member-content">
+                        <h4>Fadhlissyafiq AB</h4>
+                        <span>Media dan Informasi</span>
+                        <p>
+                            Believe that life is worth living and your belief will help create the fact.
+                        </p>
+                        {{-- <div class="social">
+                            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </div> --}}
+                    </div>
+                </div>
+            </div><!-- End Team Member -->
+            <div class="col d-flex">
+                <div class="member">
+                    <img src="assets/img/teams/delsa.HEIC.png" class="img-fluid" alt="">
+                    <div class="member-content">
+                        <h4>Delsa Alfannia</h4>
+                        <span>Media dan Informasi</span>
+                        <p>
+                            Life must be lived and curiosity kept alive. One must never, for whatever reason, turn its back on life.
+                        </p>
+                        {{-- <div class="social">
+                            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </div> --}}
+                    </div>
+                </div>
+            </div><!-- End Team Member -->
+            <div class="col d-flex">
+                <div class="member">
+                    <img src="assets/img/teams/abdullah.HEIC.png" class="img-fluid" alt="">
+                    <div class="member-content">
+                        <h4>Abdullah Faza Al Fafa</h4>
+                        <span>Media dan Informasi</span>
+                        <p>
+                            Change your thoughts and you change your world.
+                        </p>
+                        {{-- <div class="social">
+                            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </div> --}}
+                    </div>
+                </div>
+            </div><!-- End Team Member -->
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" data-aos="fade-up" data-aos-delay="100">
-            @foreach ($teams as $t)
+            {{-- @foreach ($teams as $t)
             <div class="col d-flex">
                 <div class="member">
                     <img src="{{ asset($t->image) }}" class="img-fluid" alt="">
@@ -178,15 +267,57 @@
                             {{ $t->desc }}
                         </p>
                         <div class="social">
-                            <a href="{{ $t->twitter }}" target="_blank"><i class="bi bi-twitter"></i></a>
-                            <a href="{{ $t->facebook }}" target="_blank"><i class="bi bi-facebook"></i></a>
                             <a href="{{ $t->instagram }}" target="_blank"><i class="bi bi-instagram"></i></a>
-                            <a href="{{ $t->linkedin }}" target="_blank"><i class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
             </div><!-- End Team Member -->
-            @endforeach
+            @endforeach --}}
+            <div class="col d-flex">
+                <div class="member">
+                    <img src="assets/img/teams/musyaffa.HEIC.png" class="img-fluid" alt="">
+                    <div class="member-content">
+                        <h4>Musyaffa Fajar Pratama</h4>
+                        <span>Divisi Logistik</span>
+                        <p>
+                            It’s better to be a lion for a day than a sheep all your life.
+                        </p>
+                        {{-- <div class="social">
+                            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </div> --}}
+                    </div>
+                </div>
+            </div><!-- End Team Member -->
+            <div class="col d-flex">
+                <div class="member">
+                    <img src="assets/img/teams/diana.HEIC.png" class="img-fluid" alt="">
+                    <div class="member-content">
+                        <h4>Dhiana Mayangshinta</h4>
+                        <span>Divisi Logistik</span>
+                        <p>
+                            Life is a journey to be experienced, not a problem to be solved.
+                        </p>
+                        {{-- <div class="social">
+                            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </div> --}}
+                    </div>
+                </div>
+            </div><!-- End Team Member -->
+            <div class="col d-flex">
+                <div class="member">
+                    <img src="assets/img/teams/ghifary.HEIC.png" class="img-fluid" alt="">
+                    <div class="member-content">
+                        <h4>Ghifary Achmad Azhar</h4>
+                        <span>Divisi Logistik</span>
+                        <p>
+                            If you're brave enough to say goodbye, life will reward you with a new hello.
+                        </p>
+                        {{-- <div class="social">
+                            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </div> --}}
+                    </div>
+                </div>
+            </div><!-- End Team Member -->
         </div>
     </div>
 </section><!-- End Our Team Section -->
