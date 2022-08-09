@@ -26,6 +26,7 @@ Route::get('/profil',[ProfileController::class,'index']);
 Route::get('/struktur',[StrukturController::class,'index']);
 Route::get('/potensi',[PotensiController::class,'index']);
 Route::get('/artikel',[ArtikelController::class,'index']);
+Route::get('/artikel/{artikelID}/detail',[ArtikelController::class,'detailArtikel']);
 Route::get('/kontak ',[KontakController::class,'index']);
 Route::post('/send-message',[KontakController::class,'sendMessage']);
 

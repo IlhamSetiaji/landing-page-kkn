@@ -38,7 +38,7 @@
                                         style="background-color: #ECE8E8; text-align: left; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
                                         {{ $l->description }}</p>
                                         <h6>{{ $l->date }}</h6>
-                                    <a href="#" class="btn btn-primary"
+                                    <a href="{{ url('artikel/'.$l->id.'/detail') }}" class="btn btn-primary"
                                         style="color: white; font-size: 13px;">Selengkapnya</a>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@
                                         style="background-color: #ECE8E8; text-align: left; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
                                         {{ $o->description }}</p>
                                         <h6>{{ $o->date }}</h6>
-                                    <a href="#" class="btn btn-primary"
+                                    <a href{{ url('artikel/'.$o->id.'/detail') }}" class="btn btn-primary"
                                         style="color: white; font-size: 13px;">Selengkapnya</a>
                                 </div>
                             </div>

@@ -7,8 +7,8 @@
                 </a>
                 <p>Desa dengan potensi pertanian ketan terbesar di Lumajang</p>
                 <div class="social-links d-flex mt-4">
-                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://instagram.com/karangtaruna_darungan?igshid=YmMyMTA2M2Y=" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://instagram.com/darungankampungketan?igshid=YmMyMTA2M2Y=" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
                 </div>
             </div>
             <div class="col-lg-2 col-6 footer-links">

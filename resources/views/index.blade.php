@@ -34,13 +34,13 @@
         <div id="carouselndexControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/img/hero-img.svg" class="d-block mx-auto img-fluid" alt="...">
+                    <img src="assets/img/balai_desa.png" class="d-block mx-auto img-fluid" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/hero-img.svg" class="d-block mx-auto img-fluid" alt="...">
+                    <img src="assets/img/farmroad.png" class="d-block mx-auto img-fluid" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/hero-img.svg" class="d-block mx-auto img-fluid" alt="...">
+                    <img src="assets/img/perempatan.png" class="d-block mx-auto img-fluid" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselndexControls"

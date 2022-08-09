@@ -120,10 +120,7 @@
                             qui aut aut aut
                         </p>
                         <div class="social">
-                            <a href=""><i class="bi bi-twitter"></i></a>
-                            <a href=""><i class="bi bi-facebook"></i></a>
                             <a href=""><i class="bi bi-instagram"></i></a>
-                            <a href=""><i class="bi bi-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -131,6 +128,44 @@
             <div class="col"></div>
         </div>
 
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" data-aos="fade-up" data-aos-delay="100">
+            @foreach ($teams as $t)
+            <div class="col d-flex">
+                <div class="member">
+                    <img src="{{ asset($t->image) }}" class="img-fluid" alt="">
+                    <div class="member-content">
+                        <h4>{{ $t->name }}</h4>
+                        <span>{{ $t->job }}</span>
+                        <p>
+                            {{ $t->desc }}
+                        </p>
+                        <div class="social">
+                            <a href="{{ $t->instagram }}" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End Team Member -->
+            @endforeach
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" data-aos="fade-up" data-aos-delay="100">
+            @foreach ($teams as $t)
+            <div class="col d-flex">
+                <div class="member">
+                    <img src="{{ asset($t->image) }}" class="img-fluid" alt="">
+                    <div class="member-content">
+                        <h4>{{ $t->name }}</h4>
+                        <span>{{ $t->job }}</span>
+                        <p>
+                            {{ $t->desc }}
+                        </p>
+                        <div class="social">
+                            <a href="{{ $t->instagram }}" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End Team Member -->
+            @endforeach
+        </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" data-aos="fade-up" data-aos-delay="100">
             @foreach ($teams as $t)
             <div class="col d-flex">
