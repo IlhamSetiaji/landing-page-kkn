@@ -30,12 +30,12 @@
             <span>Our Services</span>
             <h2>Potensi Desa Darungan</h2>
         </div>
-        <div class="row gy-4">
+        <div class="row gy-4 potensi">
             @foreach ($contents as $c)
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="card">
                     <div class="card-img">
-                        <img src="{{ asset($c->image) }}" alt="" class="img-fluid">
+                        <img src="{{ asset($c->image) }}" alt="" class="img-fluid h-100">
                     </div>
                     <h3><a href="service-details.html" class="stretched-link">{{ $c->title }}</a></h3>
                     <p>{{ $c->desc }}</p>
