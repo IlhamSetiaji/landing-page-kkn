@@ -4,35 +4,55 @@
 <section id="hero" class="hero d-flex align-items-center">
     <div class="container">
         <div class="row gy-4 d-flex justify-content-between">
-            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <div class="order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center">
                 <h2 data-aos="fade-up"><br>Profil Desa Darungan Yosowilangun Lumajang</h2>
-                <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="row row-cols-2 row-cols-md-3 gy-4" data-aos="fade-up" data-aos-delay="400">
                     <div class="col-lg-3 col-6">
                         <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="{{ $hero->krajan }}" data-purecounter-duration="1"
-                                class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="{{ $hero->krajan }}"
+                                data-purecounter-duration="1" class="purecounter"></span>
                             <p>Dusun Krajan</p>
                         </div>
                     </div><!-- End Stats Item -->
                     <div class="col-lg-3 col-6">
                         <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="{{ $hero->rekesan }}" data-purecounter-duration="1"
-                                class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="{{ $hero->rekesan }}"
+                                data-purecounter-duration="1" class="purecounter"></span>
                             <p>Dusun Rekesan</p>
                         </div>
                     </div><!-- End Stats Item -->
                     <div class="col-lg-3 col-6">
                         <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="{{ $hero->igir }}" data-purecounter-duration="1"
-                                class="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="{{ $hero->igir }}"
+                                data-purecounter-duration="1" class="purecounter"></span>
                             <p>Dusun Igir-igir </p>
                         </div>
                     </div><!-- End Stats Item -->
                 </div><!-- End Stats Item -->
             </div>
         </div>
-        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-            <img src="{{ asset('assets/img/hero-img.svg') }}" class="img-fluid mb-3 mb-lg-0" alt="">
+        <div id="carouselndexControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/hero-img.svg" class="d-block mx-auto img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/hero-img.svg" class="d-block mx-auto img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/hero-img.svg" class="d-block mx-auto img-fluid" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselndexControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselndexControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
 </section><!-- End Hero Section -->
