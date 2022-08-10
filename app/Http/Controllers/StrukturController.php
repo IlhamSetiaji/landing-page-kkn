@@ -8,6 +8,7 @@ class StrukturController extends Controller
 {
     public function index()
     {
-        return view('struktur');
+        $active = 'struktur';
+        return view('struktur',compact('active'));
     }
 }

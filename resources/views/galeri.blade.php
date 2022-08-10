@@ -2,19 +2,27 @@
 @section('title','Desa Darungan Galeri')
 @section('main-content')
 <!-- ======= Call To Action Section ======= -->
-<section id="call-to-action" class="call-to-action">
-    <div class="container" data-aos="zoom-out">
-
-        <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-                <h3>Galeri</h3>
-                <p></p>
-                {{-- <a class="cta-btn" href="#">Lihat Berita</a> --}}
-                </dic>
+<div class="breadcrumbs">
+    <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/page-header.jpg');">
+        <div class="container position-relative">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2>Galeri</h2>
+                    {{-- <p>Desa Darungan merupakan desa yang mempunyai banyak kekayaan dan keberagaman, sehingga banyak
+                        potensi yang dihasilkan dari desa ini membuat Desa Darungan semakin maju.</p> --}}
+                </div>
             </div>
-
         </div>
-</section><!-- End Call To Action Section -->
+    </div>
+    <nav>
+        <div class="container">
+            <ol>
+                <li><a href="{{ url('/') }}">Home</a></li>
+                <li>Potensi</li>
+            </ol>
+        </div>
+    </nav>
+</div>
 <section id="article" class="article">
     <!-- Gallery -->
     <div class="container-fluid">
