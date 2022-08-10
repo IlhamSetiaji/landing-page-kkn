@@ -3,6 +3,7 @@
 @section('hero')
 <section id="hero" class="hero d-flex align-items-center">
     <div class="container-fluid">
+        <br><br>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
