@@ -2,8 +2,8 @@
 @section('title','Desa Darungan Home')
 @section('hero')
 <section id="hero" class="hero d-flex align-items-center">
-    <div class="container">
-        <div class="row gy-4 d-flex justify-content-between">
+    <div class="container-fluid">
+        {{-- <div class="row gy-4 d-flex justify-content-between">
             <div class="order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center">
                 <h2 data-aos="fade-up"><br>Profil Desa Darungan Yosowilangun Lumajang</h2>
                 <div class="row row-cols-2 row-cols-md-3 gy-4" data-aos="fade-up" data-aos-delay="400">
@@ -30,32 +30,40 @@
                     </div><!-- End Stats Item -->
                 </div><!-- End Stats Item -->
             </div>
-        </div>
-        <div id="carouselndexControls" class="carousel slide" data-bs-ride="carousel">
+        </div> --}}
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                {{-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button> --}}
+            </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/img/balai_desa.png" class="d-block mx-auto img-fluid" alt="...">
+                    <img src="assets/img/front.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/img/farmroad.png" class="d-block mx-auto img-fluid" alt="...">
+                    <img src="assets/img/back.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
-                    <img src="assets/img/perempatan.png" class="d-block mx-auto img-fluid" alt="...">
-                </div>
+                {{-- <div class="carousel-item">
+                    <img src="assets/img/farmroad.png" class="d-block w-100" alt="...">
+                </div> --}}
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselndexControls"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselndexControls"
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
-</section><!-- End Hero Section -->
+</section>
+<!-- End Hero Section -->
 @endsection
 @section('main-content')
 <!-- ======= Featured Services Section ======= -->
