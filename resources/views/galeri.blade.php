@@ -1,5 +1,5 @@
 @extends('components.template')
-@section('title','Desa Darungan Struktur')
+@section('title','Desa Darungan Galeri')
 @section('main-content')
 <!-- ======= Call To Action Section ======= -->
 <section id="call-to-action" class="call-to-action">

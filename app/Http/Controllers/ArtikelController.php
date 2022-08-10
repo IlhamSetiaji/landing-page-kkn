@@ -132,4 +132,10 @@ class ArtikelController extends Controller
         }
         return view('artikel-detail',compact('artikel'));
     }
+
+    public function showAllArtikel()
+    {
+        $artikel = Article::all();
+        return view('all-artikel',compact('artikel'));
+    }
 }
