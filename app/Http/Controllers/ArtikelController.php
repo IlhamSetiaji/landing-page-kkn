@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Validator;
 
 class ArtikelController extends Controller
@@ -12,8 +13,9 @@ class ArtikelController extends Controller
     {
         $latest = Article::latest()->take(3)->get();
         $oldest = Article::oldest()->take(3)->get();
+        $active = 'artikel';
         // $random = Article::inRandomOrder()->take(3)->get();
-        return view('artikel',compact('latest','oldest'));
+        return view('artikel',compact('latest','oldest','active'));
     }
 
     public function indexArticle()
@@ -130,12 +132,14 @@ class ArtikelController extends Controller
         {
             return redirect()->back()->with('status','Data tidak ditemukan');
         }
-        return view('artikel-detail',compact('artikel'));
+        $active = 'artikel';
+        return view('artikel-detail',compact('artikel','active'));
     }
 
     public function showAllArtikel()
     {
         $artikel = Article::all();
-        return view('all-artikel',compact('artikel'));
+        $active = 'artikel';
+        return view('all-artikel',compact('artikel','active'));
     }
 }

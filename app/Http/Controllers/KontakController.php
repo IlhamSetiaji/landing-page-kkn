@@ -14,7 +14,8 @@ class KontakController extends Controller
 {
     public function index()
     {
-        return view('kontak');
+        $active = 'kontak';
+        return view('kontak',compact('active'));
     }
 
     public function sendMessage()

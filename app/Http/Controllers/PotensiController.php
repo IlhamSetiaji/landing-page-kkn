@@ -11,7 +11,8 @@ class PotensiController extends Controller
     public function index()
     {
         $contents = PotensiContent::latest()->take(9)->get();
-        return view('potensi',compact('contents'));
+        $active = 'potensi';
+        return view('potensi',compact('contents','active'));
     }
 
     public function indexContent()

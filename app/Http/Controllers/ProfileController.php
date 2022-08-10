@@ -17,7 +17,8 @@ class ProfileController extends Controller
         $content = ProfileContent::latest()->first();
         $teams = ProfileTeam::latest()->take(3)->get();
         $testi = ProfileTesti::latest()->take(5)->get();
-        return view('profil',compact('content','hero','teams','testi'));
+        $active = 'profil';
+        return view('profil',compact('content','hero','teams','testi','active'));
     }
 
     public function indexContent()

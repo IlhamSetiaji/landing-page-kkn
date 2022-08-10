@@ -1,20 +1,31 @@
 @extends('components.template')
 @section('title','Desa Darungan Potensi')
 @section('main-content')
-<!-- ======= Call To Action Section ======= -->
-<section id="call-to-action" class="call-to-action">
-    <div class="container" data-aos="zoom-out">
-
-        <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-                <h3>Artikel</h3>
-                <p></p>
-                <a class="cta-btn" href="{{ url('artikel-all') }}">Lihat Semua Artikel</a>
-                </dic>
+<div class="breadcrumbs">
+    <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/page-header.jpg');">
+        <div class="container position-relative">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 text-center">
+                            <h2>Semua Artikel</h2>
+                            <a class="btn btn-info" href="{{ url('artikel-all') }}">Lihat Semua Artikel</a>
+                        </div>
+            
+                    </div>
+                </div>
             </div>
-
         </div>
-</section><!-- End Call To Action Section -->
+    </div>
+    <nav>
+        <div class="container">
+            <ol>
+                <li><a href="{{ url('/') }}">Home</a></li>
+                <li>Potensi</li>
+            </ol>
+        </div>
+    </nav>
+</div>
 <section id="article" class="article">
     <div class="col-lg-12 text-center">
         <div>&nbsp;</div>

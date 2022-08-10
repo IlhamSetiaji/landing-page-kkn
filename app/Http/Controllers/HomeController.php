@@ -6,14 +6,21 @@ use App\Models\HomeFeature;
 use App\Models\HomeHero;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\View;
 
 class HomeController extends Controller
 {
+    public function __construct()
+    {
+        $active = 'home';
+        View::share('index',$active);
+    }
     public function index()
     {
         $hero = HomeHero::latest()->first();
         $feature = HomeFeature::latest()->first();
-        return view('index',compact('hero','feature'));
+        $active = 'home';
+        return view('index',compact('hero','feature','active'));
     }
 
     public function indexHero()
