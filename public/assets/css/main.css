@@ -312,7 +312,7 @@
   .header {
     transition: all 0.5s;
     z-index: 997;
-    padding: 30px 0;
+    padding: 0px 0;
   }
   
   .header img{
@@ -334,7 +334,8 @@
     font-size: 30px;
     margin: 0;
     font-weight: 700;
-    color: #fff;
+    color: var(--color-primary);
+    text-shadow: 1px 1px #000;
     font-family: var(--font-primary);
   }
   
@@ -365,8 +366,9 @@
       padding: 10px 0 10px 30px;
       font-family: var(--font-primary);
       font-size: 16px;
-      font-weight: 400;
-      color: rgba(255, 255, 255, 0.6);
+      font-weight: 700;
+      /* color: rgba(255, 255, 255, 0.6); */
+      color: var(--color-primary);
       white-space: nowrap;
       transition: 0.3s;
     }
@@ -386,7 +388,7 @@
     .navbar .active,
     .navbar .active:focus,
     .navbar li:hover>a {
-      color: #fff;
+      color: rgb(0, 0, 0);
     }
   
     .navbar .get-a-quote,
