@@ -1,5 +1,5 @@
 @extends('components.template')
-@section('title','Desa Darungan Struktur')
+@section('title','Desa Darungan Potensi')
 @section('main-content')
 <!-- ======= Call To Action Section ======= -->
 <section id="call-to-action" class="call-to-action">
@@ -9,7 +9,7 @@
             <div class="col-lg-8 text-center">
                 <h3>Artikel</h3>
                 <p></p>
-                <a class="cta-btn" href="#">Lihat Berita</a>
+                <a class="cta-btn" href="{{ url('artikel-all') }}">Lihat Semua Artikel</a>
                 </dic>
             </div>
 
@@ -61,7 +61,7 @@
                                     style="background-color: #ECE8E8; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; max-height: 170px;">
                                     <h5 class="card-title" style="text-align: left;">{{ $o->title }}</h5>
                                     <p class="card-text"
-                                        style="background-color: #ECE8E8; text-align: left; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;  white-space: nowrap; 
+                                        style="background-color: #ECE8E8; text-align: left; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; white-space: nowrap; 
                                         width: 80%; 
                                         overflow: hidden;
                                         text-overflow: ellipsis;">

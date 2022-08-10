@@ -1,5 +1,5 @@
 @extends('components.template')
-@section('title','Desa Darungan Potensi')
+@section('title','Desa Darungan Artikel')
 @section('main-content')
 <!-- ======= Breadcrumbs ======= -->
 <div class="breadcrumbs">
@@ -7,9 +7,9 @@
         <div class="container position-relative">
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-6 text-center">
-                    <h2>Potensi Desa</h2>
-                    <p>Desa Darungan merupakan desa yang mempunyai banyak kekayaan dan keberagaman, sehingga banyak
-                        potensi yang dihasilkan dari desa ini membuat Desa Darungan semakin maju.</p>
+                    <h2>Semua Artikel</h2>
+                    {{-- <p>Desa Darungan merupakan desa yang mempunyai banyak kekayaan dan keberagaman, sehingga banyak
+                        potensi yang dihasilkan dari desa ini membuat Desa Darungan semakin maju.</p> --}}
                 </div>
             </div>
         </div>
@@ -27,18 +27,22 @@
 <section id="service" class="services pt-0">
     <div class="container" data-aos="fade-up">
         <div class="section-header">
-            <span>Potensi Desa Darungan</span>
-            <h2>Potensi Desa Darungan</h2>
+            <span>Artikel</span>
+            <h2>Artikel</h2>
         </div>
         <div class="row gy-4 potensi">
-            @foreach ($contents as $c)
+            @foreach ($artikel as $c)
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="card">
                     <div class="card-img">
                         <img src="{{ asset($c->image) }}" alt="" class="img-fluid h-100">
                     </div>
-                    <h3><a href="#" class="stretched-link">{{ $c->title }}</a></h3>
-                    <p>{{ $c->desc }}</p>
+                    <h3><a href="{{ url('artikel/'.$c->id.'/detail') }}" class="stretched-link">{{ $c->title }}</a></h3>
+                    <p style="white-space: nowrap; 
+                    width: 80%; 
+                    overflow: hidden;
+                    text-overflow: ellipsis;">{{ $c->description }}</p>
+                    <p>{{ $c->date }}</p>
                 </div>
             </div><!-- End Card Item -->
             @endforeach
