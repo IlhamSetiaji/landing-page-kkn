@@ -3,34 +3,6 @@
 @section('hero')
 <section id="hero" class="hero d-flex align-items-center">
     <div class="container-fluid">
-        {{-- <div class="row gy-4 d-flex justify-content-between">
-            <div class="order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center">
-                <h2 data-aos="fade-up"><br>Profil Desa Darungan Yosowilangun Lumajang</h2>
-                <div class="row row-cols-2 row-cols-md-3 gy-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="col-lg-3 col-6">
-                        <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="{{ $hero->krajan }}"
-                                data-purecounter-duration="1" class="purecounter"></span>
-                            <p>Dusun Krajan</p>
-                        </div>
-                    </div><!-- End Stats Item -->
-                    <div class="col-lg-3 col-6">
-                        <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="{{ $hero->rekesan }}"
-                                data-purecounter-duration="1" class="purecounter"></span>
-                            <p>Dusun Rekesan</p>
-                        </div>
-                    </div><!-- End Stats Item -->
-                    <div class="col-lg-3 col-6">
-                        <div class="stats-item text-center w-100 h-100">
-                            <span data-purecounter-start="0" data-purecounter-end="{{ $hero->igir }}"
-                                data-purecounter-duration="1" class="purecounter"></span>
-                            <p>Dusun Igir-igir </p>
-                        </div>
-                    </div><!-- End Stats Item -->
-                </div><!-- End Stats Item -->
-            </div>
-        </div> --}}
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
