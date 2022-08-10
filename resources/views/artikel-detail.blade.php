@@ -3,11 +3,11 @@
 @section('main-content')
 <!-- ======= Breadcrumbs ======= -->
 <div class="breadcrumbs">
-    <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/profil.png');">
+    <div class="page-header d-flex align-items-center" style="background-image: url({{ asset('assets/img/profil.png') }});">
         <div class="container position-relative">
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-6 text-center">
-                    <h2>Profil Desa</h2>
+                    <h2>Detail Artikel</h2>
                     <p></p>
                 </div>
             </div>

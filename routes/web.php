@@ -1,11 +1,12 @@
 <?php
 
-use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\GaleriController;
 use App\Http\Controllers\KontakController;
 use App\Http\Controllers\ArtikelController;
-use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PotensiController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StrukturController;
@@ -29,6 +30,7 @@ Route::get('/artikel',[ArtikelController::class,'index']);
 Route::get('/artikel/{artikelID}/detail',[ArtikelController::class,'detailArtikel']);
 Route::get('/kontak ',[KontakController::class,'index']);
 Route::post('/send-message',[KontakController::class,'sendMessage']);
+Route::get('/galeri ',[GaleriController::class,'index']);
 
 Route::get('login',[AuthController::class,'index'])->name('login');
 Route::post('login',[AuthController::class,'login']);

@@ -29,13 +29,16 @@
                         @foreach ($latest as $l)
                         <div class="col-md-4 col-sm-12 col-lg-4 mt-3">
                             <div class="card" style="border-radius: 15px; width: 100%;">
-                                <img src="{{ asset($l->image) }}" class="card-img-top" alt=""
-                                    style="background-color: #ECE8E8; border-top-left-radius: 15px; border-top-right-radius: 15px; height: 250px;">
+                                <a href="{{ url('artikel/'.$l->id.'/detail') }}"><img src="{{ asset($l->image) }}" class="card-img-top" alt=""
+                                    style="background-color: #ECE8E8; border-top-left-radius: 15px; border-top-right-radius: 15px; height: 250px;"></a>
                                 <div class="card-body"
                                     style="background-color: #ECE8E8; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; max-height: 170px;">
                                     <h5 class="card-title" style="text-align: left;">{{ $l->title }}</h5>
                                     <p class="card-text"
-                                        style="background-color: #ECE8E8; text-align: left; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
+                                        style="background-color: #ECE8E8; text-align: left; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;  white-space: nowrap; 
+                                        width: 80%; 
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;">
                                         {{ $l->description }}</p>
                                         <h6>{{ $l->date }}</h6>
                                     <a href="{{ url('artikel/'.$l->id.'/detail') }}" class="btn btn-primary"
@@ -52,13 +55,16 @@
                         @foreach ($oldest as $o)
                         <div class="col-md-4 col-sm-12 col-lg-4 mt-3">
                             <div class="card" style="border-radius: 15px; width: 100%;">
-                                <img src="{{ asset($o->image) }}" class="card-img-top" alt=""
-                                    style="background-color: #ECE8E8; border-top-left-radius: 15px; border-top-right-radius: 15px; height: 250px;">
+                                <a href="{{ url('artikel/'.$o->id.'/detail') }}"><img src="{{ asset($o->image) }}" class="card-img-top" alt=""
+                                    style="background-color: #ECE8E8; border-top-left-radius: 15px; border-top-right-radius: 15px; height: 250px;"></a>
                                 <div class="card-body"
                                     style="background-color: #ECE8E8; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; max-height: 170px;">
                                     <h5 class="card-title" style="text-align: left;">{{ $o->title }}</h5>
                                     <p class="card-text"
-                                        style="background-color: #ECE8E8; text-align: left; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
+                                        style="background-color: #ECE8E8; text-align: left; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;  white-space: nowrap; 
+                                        width: 80%; 
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;">
                                         {{ $o->description }}</p>
                                         <h6>{{ $o->date }}</h6>
                                     <a href{{ url('artikel/'.$o->id.'/detail') }}" class="btn btn-primary"

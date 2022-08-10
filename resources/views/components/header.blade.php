@@ -15,6 +15,7 @@
                 <li><a href="{{ url('struktur') }}">Struktur</a></li>
                 <li><a href="{{ url('potensi') }}">Potensi</a></li>
                 <li><a href="{{ url('artikel') }}">Artikel</a></li>
+                <li><a href="{{ url('galeri') }}">Galeri</a></li>
                 <li><a href="{{ url('kontak') }}">Kontak</a></li>
             </ul>
         </nav>

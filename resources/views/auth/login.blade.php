@@ -33,7 +33,7 @@
             <div class="d-flex flex-wrap align-items-stretch">
                 <div class="col-lg-4 col-md-6 col-12 order-lg-1 min-vh-100 order-2 bg-white">
                     <div class="p-4 m-3">
-                        <img src="{{ asset('Stisla/assets/img/AMIKOM.png') }}" alt="logo" width="200"
+                        <img src="{{ asset('assets/img/logolumajang.png') }}" alt="logo" width="200"
                             class="shadow-light rounded-circle mb-5 mt-2">
                         <h4 class="text-dark font-weight-normal">Welcome to <span class="font-weight-bold">Desa Darungan</span>
                         </h4>
@@ -102,16 +102,16 @@
                     </div>
                 </div>
                 <div class="col-lg-8 col-12 order-lg-2 order-1 min-vh-100 background-walk-y position-relative overlay-gradient-bottom"
-                    data-background="{{ asset('Stisla/assets/img/unsplash/yogyakarta.jpg') }}">
+                    data-background="{{ asset('assets/img/farmroad.png') }}">
                     <div class="absolute-bottom-left index-2">
                         <div class="text-light p-5 pb-2">
                             <div class="mb-5 pb-3">
-                                <h1 class="mb-2 display-4 font-weight-bold">Embung Tambakboyo Reservoir</h1>
-                                <h5 class="font-weight-normal text-muted-transparent">Yogyakarta, Indonesia</h5>
+                                <h1 class="mb-2 display-4 font-weight-bold">Desa Darungan</h1>
+                                <h5 class="font-weight-normal text-muted-transparent">Yosowilangun, Lumajang</h5>
                             </div>
                             Photo by <a class="text-light bb" target="_blank"
-                                href="https://unsplash.com/photos/aqJ2W6sfYxI">Robbyansyah DewanToro</a> on <a
-                                class="text-light bb" target="_blank" href="https://unsplash.com">Unsplash</a>
+                                href="https://unsplash.com/photos/aqJ2W6sfYxI">Delsa Alfannia</a> on <a
+                                class="text-light bb" target="_blank" href="https://unsplash.com">KKN 473 Darungan</a>
                         </div>
                     </div>
                 </div>
