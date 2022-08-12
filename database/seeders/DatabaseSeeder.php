@@ -24,6 +24,11 @@ class DatabaseSeeder extends Seeder
             ProfileTestiSeeder::class,
             PotensiContentSeeder::class,
             ArtikelSeeder::class,
+            LeaderTeamSeeder::class,
+            FirstLineTeamSeeder::class,
+            SecondLineTeamSeeder::class,
+            ThirdLineTeamSeeder::class,
+            GallerySeeder::class,
         ]);
         // \App\Models\User::factory(10)->create();
 

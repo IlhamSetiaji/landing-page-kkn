@@ -115,7 +115,7 @@ class ProfileTeamSeeder extends Seeder
                 'linkedin' => 'https://www.linkedin.com/',
                 'image' => 'assets/img/team/team-3.jpg',
             ],
-        ])->each(function($teams){
+        ])->each(function ($teams) {
             ProfileTeam::create($teams);
         });
     }

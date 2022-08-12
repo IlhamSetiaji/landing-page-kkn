@@ -14,9 +14,9 @@
             <li class="dropdown">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-home"></i> <span>Homepage</span></a>
                 <ul class="dropdown-menu">
-                    <li>
+                    {{-- <li>
                         <a class="nav-link" href="{{ url('admin/home-hero') }}"> <span>Hero</span></a>
-                    </li>
+                    </li> --}}
                     <li>
                         <a class="nav-link" href="{{ url('admin/home-feature') }}"> <span>Feature</span></a>
                     </li>
@@ -27,8 +27,20 @@
                     <li>
                         <a class="nav-link" href="{{ url('admin/profile-content') }}"> <span>Content</span></a>
                     </li>
-                    <li>
+                    {{-- <li>
                         <a class="nav-link" href="{{ url('admin/profile-team') }}"> <span>Our Team</span></a>
+                    </li> --}}
+                    <li>
+                        <a class="nav-link" href="{{ url('admin/profile-leader-team') }}"> <span>Leader Team</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="{{ url('admin/profile-first-team') }}"> <span>First Line Team</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="{{ url('admin/profile-second-team') }}"> <span>Second Line Team</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="{{ url('admin/profile-third-team') }}"> <span>Third Line Team</span></a>
                     </li>
                     <li>
                         <a class="nav-link" href="{{ url('admin/profile-testi') }}"> <span>Testimonial</span></a>
@@ -56,6 +68,14 @@
                 <ul class="dropdown-menu">
                     <li>
                         <a class="nav-link" href="{{ url('admin/contact') }}"> <span>Inbox</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="nav-link has-dropdown"><i class="fas fa-images"></i> <span>Galeri</span></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="nav-link" href="{{ url('admin/galeri') }}"> <span>Content</span></a>
                     </li>
                 </ul>
             </li>

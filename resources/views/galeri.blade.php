@@ -27,7 +27,16 @@
     <!-- Gallery -->
     <div class="container-fluid">
         <div class="row">
+            @foreach ($galeri as $g)
             <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <img src="{{ asset($g->image) }}"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+
+                {{-- <img src="assets/img/farmroad.png"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" /> --}}
+            </div>
+            @endforeach
+            {{-- <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
                 <img src="assets/img/balai_desa.png"
                     class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
 
@@ -97,7 +106,7 @@
 
                 <img src="assets/img/IMG_1142.HEIC.png"
                     class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
-            </div>
+            </div> --}}
         </div>
     </div>
     <!-- Gallery -->
